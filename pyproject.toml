@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stargarden"
+version = "0.1.0"
+description = "A pocket-sized narrative space adventure for the terminal."
+authors = [{name = "Fun Project"}]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Public Domain",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Games/Entertainment :: Role-Playing",
+]
+
+[project.scripts]
+stargarden = "stargarden.game:run_game"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
